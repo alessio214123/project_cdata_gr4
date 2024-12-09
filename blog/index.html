@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Blog Review</title>
+    <link rel="stylesheet" href=".../../style.css">
+    <script src='.../../script.js'></script>
+
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="#">Movies</a>
+        <a href="#">Tv series</a>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search for a movie...">
+            <button id="searchButton">Search</button>
+        </div>
+    </div>
+        
+        
+<h1 class="main-title">Movies Blog Review</h1><hr>
+<div class="genre-buttons">
+    <button data-genre="all">All</button>
+    <button data-genre="action">Action</button>
+    <button data-genre="drama">Drama</button>
+    <button data-genre="comedy">Comedy</button>
+    <button data-genre="sci-fi">Sci-Fi</button>
+    <button data-genre="crime">Crime</button>
+</div><br>
+        
+<h2 class="titles" id="most-viewed-title">Most Viewed</h2>
+
+
+<div class="movie-grid" id="most-viewed">
+<!-- Movie Card 1 -->
+<div class="movie-card" data-genre="drama" data-type="movies">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="https://m.media-amazon.com/images/M/MV5BMDAyY2FhYjctNDc5OS00MDNlLThiMGUtY2UxYWVkNGY2ZjljXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="The Shawshank Redemption">
+        </div>
+        <div class="card-back">
+            <h3>The Shawshank Redemption</h3>
+            <p>Release Date: 1994</p>
+            <p class="description">A poignant story of perseverance, resilience, and friendship, The Shawshank Redemption follows the journey of Andy Dufresne, a banker wrongly imprisoned for his wife's murder, as he forms an unlikely bond with fellow inmate Ellis Redding. Set against the backdrop of Shawshank State Penitentiary, the film explores themes of hope, redemption, and the transformative power of friendship as Andy navigates the challenges of prison life.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Movie Card 2 -->
+<div class="movie-card" data-genre="crime" data-type="tv-series">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Breaking Bad">
+        </div>
+        <div class="card-back">
+            <h3>Breaking Bad</h3>
+            <p>Release Date: 2008</p>
+            <p class="description">Breaking Bad chronicles the dramatic transformation of Walter White, a high school chemistry teacher turned methamphetamine manufacturer. After being diagnosed with terminal cancer, Walter teams up with former student Jesse Pinkman to secure his family's financial future, but his descent into the world of drugs, crime, and moral corruption leads to consequences that spiral out of control. This gripping series delves deep into the complexities of human nature, morality, and the consequences of one's choices.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Movie Card 3 -->
+<div class="movie-card" data-genre="sci-fi" data-type="movies">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="https://m.media-amazon.com/images/M/MV5BMjExMjkwNTQ0Nl5BMl5BanBnXkFtZTcwNTY0OTk1Mw@@._V1_.jpg" alt="Inception">
+        </div>
+        <div class="card-back">
+            <h3>Inception</h3>
+            <p>Release Date: 2010</p>
+            <p class="description">Christopher Nolan’s mind-bending thriller takes the audience on a journey into the world of dreams within dreams. Dom Cobb, a thief skilled in the art of "extraction" (stealing secrets from within a person's subconscious), is offered a chance to erase his criminal record if he can successfully implant an idea into someone's mind—a process known as "inception." As the team delves deeper into layers of the dream world, the line between reality and illusion becomes increasingly blurred.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Movie Card 4 -->
+<div class="movie-card" data-genre="action" data-type="movies">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_.jpg" alt="The Dark Knight">
+        </div>
+        <div class="card-back">
+            <h3>The Dark Knight</h3>
+            <p>Release Date: 2008</p>
+            <p class="description">Christopher Nolan's seminal superhero film, The Dark Knight, redefined the genre with its mature themes, complex characters, and intense action sequences. Batman, played by Christian Bale, must confront the Joker, an anarchistic villain played by Heath Ledger, who seeks to destabilize Gotham City. The film explores themes of morality, justice, and the fine line between heroism and vigilantism, while delivering unforgettable performances and breathtaking action scenes.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Movie Card 5 -->
+<div class="movie-card" data-genre="action" data-type="tv-series">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/gotposterbig.png" alt="Game of Thrones">
+        </div>
+        <div class="card-back">
+            <h3>Game of Thrones</h3>
+            <p>Release Date: 2011</p>
+            <p class="description">Set in the brutal, politically charged world of Westeros, Game of Thrones, based on George R.R. Martin's A Song of Ice and Fire series, follows the struggle for power among noble families vying for control of the Iron Throne. The series is known for its intricate plots, unforgettable characters, and shocking twists. Themes of loyalty, betrayal, war, and survival are explored in a gritty, fantastical world where no one is safe.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Movie Card 6 -->
+<div class="movie-card" data-genre="sci-fi" data-type="tv-series">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="https://resizing.flixster.com/0xxuABVVuzJrUT130WFHKE-irEg=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vNzUyMTFhOTktZTU4Ni00ODkyLWJlYjQtZTgxYTllZmU2OGM0LmpwZw==" alt="Stranger Things">
+        </div>
+        <div class="card-back">
+            <h3>Stranger Things</h3>
+            <p>Release Date: 2016</p>
+            <p class="description">Set in the 1980s, Stranger Things blends science fiction, horror, and nostalgia to tell the story of a group of kids who uncover dark supernatural forces lurking in their small town of Hawkins, Indiana. The series follows their quest to find their missing friend, encountering strange creatures, secret government experiments, and a girl with extraordinary telekinetic powers. As they face these threats, the group must navigate the complexities of friendship, family, and growing up.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Movie Card 7 -->
+<div class="movie-card" data-genre="sci-fi" data-type="movies">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="https://m.media-amazon.com/images/M/MV5BYzdjMDAxZGItMjI2My00ODA1LTlkNzItOWFjMDU5ZDJlYWY3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Interstellar">
+        </div>
+        <div class="card-back">
+            <h3>Interstellar</h3>
+            <p>Release Date: 2014</p>
+            <p class="description">In Christopher Nolan’s Interstellar, Earth is on the brink of collapse, and a group of astronauts is sent on a mission through a newly discovered wormhole to find a new home for humanity. As the team ventures into the unknown reaches of space, they encounter strange planets and forces of gravity that challenge their understanding of time and space. The film blends stunning visuals with profound philosophical questions about love, sacrifice, and the survival of the human race.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Movie Card 8 -->
+<div class="movie-card" data-genre="crime" data-type="movies">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="https://m.media-amazon.com/images/M/MV5BYTJkNGQyZDgtZDQ0NC00MDM0LWEzZWQtYzUzZDEwMDljZWNjXkEyXkFqcGc@._V1_.jpg" alt="The Godfather">
+        </div>
+        <div class="card-back">
+            <h3>The Godfather</h3>
+            <p>Release Date: 1972</p>
+            <p class="description">Francis Ford Coppola’s epic saga, The Godfather, is a landmark in American cinema. The film follows the powerful Corleone crime family, focusing on Michael Corleone's (Al Pacino) reluctant involvement in the underworld as he takes control after his father’s assassination attempt. Set against the backdrop of post-war America, the film explores themes of power, loyalty, and family dynamics, becoming a timeless classic with some of the most memorable performances in film history.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Movie Card 9 -->
+<div class="movie-card" data-genre="action" data-type="tv-series">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="https://ew.com/thmb/l4icXonssehuNDlJMDIwVPCLkKo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/mandalorian-2000-29ad215a3c8841eab4119fb1fb16fcc4.jpg" alt="The Mandalorian">
+        </div>
+        <div class="card-back">
+            <h3>The Mandalorian</h3>
+            <p>Release Date: 2019</p>
+            <p class="description">Set in the expansive Star Wars universe, The Mandalorian follows the journey of Din Djarin, a lone bounty hunter navigating the Outer Rim of the galaxy. In the wake of the fall of the Empire, he discovers a mysterious child, known as Baby Yoda (Grogu), and becomes entangled in a mission to protect the child from dangerous forces. The series is an action-packed, visually stunning adventure that blends Western influences with deep Star Wars lore.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Movie Card 10 -->
+<div class="movie-card" data-genre="crime" data-type="movies">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="https://m.media-amazon.com/images/M/MV5BYTViYTE3ZGQtNDBlMC00ZTAyLTkyODMtZGRiZDg0MjA2YThkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Pulp Fiction">
+        </div>
+        <div class="card-back">
+            <h3>Pulp Fiction</h3>
+            <p>Release Date: 1994</p>
+            <p class="description">Quentin Tarantino's Pulp Fiction is a groundbreaking film that weaves multiple interconnected stories about crime, redemption, and fate. With its sharp dialogue, nonlinear structure, and memorable characters, it follows hitmen Vincent Vega and Jules Winnfield, mobster Marsellus Wallace, and others as they navigate a series of chaotic events in Los Angeles. Known for its influence on modern cinema, Pulp Fiction remains a cult classic.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Movie Card 11 -->
+<div class="movie-card" data-genre="sci-fi" data-type="movies">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="https://m.media-amazon.com/images/M/MV5BMDEzMmQwZjctZWU2My00MWNlLWE0NjItMDJlYTRlNGJiZjcyXkEyXkFqcGc@._V1_.jpg" alt="Avatar">
+        </div>
+        <div class="card-back">
+            <h3>Avatar</h3>
+            <p>Release Date: 2009</p>
+            <p class="description">James Cameron’s Avatar transports viewers to Pandora, a lush and beautiful alien world, where a paraplegic former Marine named Jake Sully (Sam Worthington) is sent on a mission to infiltrate the native Na'vi people. As Jake becomes integrated into their culture, he starts to question his loyalties. Avatar is a visually stunning film that explores themes of environmentalism, imperialism, and the power of connection, making it a landmark achievement in filmmaking.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Movie Card 12 -->
+<div class="movie-card" data-genre="action" data-type="tv-series">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="https://m.media-amazon.com/images/M/MV5BMTQ5MDU5MTktMDZkMy00NDU1LWIxM2UtODg5OGFiNmRhNDBjXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="The Witcher">
+        </div>
+        <div class="card-back">
+            <h3>The Witcher</h3>
+            <p>Release Date: 2019</p>
+            <p class="description">Based on Andrzej Sapkowski’s bestselling fantasy novels, The Witcher follows Geralt of Rivia, a monster hunter with supernatural abilities, as he navigates a world plagued by corruption, magic, and dangerous creatures. Geralt's journey intertwines with the destinies of powerful sorceresses, kings, and warriors as he battles for survival in a morally gray world. The series is a dark fantasy epic filled with intrigue, magic, and action.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Movie Card 13 -->
+<div class="movie-card" data-genre="action" data-type="movies">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="https://upload.wikimedia.org/wikipedia/en/8/8a/The_Avengers_%282012_film%29_poster.jpg" alt="The Avengers">
+        </div>
+        <div class="card-back">
+            <h3>The Avengers</h3>
+            <p>Release Date: 2012</p>
+            <p class="description">In Marvel’s The Avengers, Earth's mightiest heroes are assembled to face the alien threat posed by Loki and his army. The film brings together iconic superheroes like Iron Man, Captain America, Thor, Hulk, Black Widow, and Hawkeye as they must put aside their differences and work together to protect the world. The Avengers revolutionized the superhero genre with its successful team-up of characters, action-packed sequences, and the birth of the Marvel Cinematic Universe.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Movie Card 14 -->
+<div class="movie-card" data-genre="drama" data-type="movies">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="https://assets.scriptslug.com/live/img/poster/parasite-2019.jpg?v=1674487108" alt="Parasite">
+        </div>
+        <div class="card-back">
+            <h3>Parasite</h3>
+            <p>Release Date: 2019</p>
+            <p class="description">Bong Joon-ho's Parasite is a genre-bending social satire that explores the disparities between two families—the wealthy Parks and the struggling Kims. The film delves into themes of class, privilege, and inequality as the Kims infiltrate the Parks’ lives under the guise of working for them. As the plot unfolds, it takes shocking twists, becoming a tense commentary on societal structures. Parasite won several prestigious awards, including the Academy Award for Best Picture, making history as the first non-English-language film to win the top honor.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Movie Card 15 -->
+<div class="movie-card" data-genre="comedy" data-type="tv-series">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="https://m.media-amazon.com/images/M/MV5BNTQzNGZjNDEtOTMwYi00MzFjLWE2ZTYtYzYxYzMwMjZkZDc5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Sherlock">
+        </div>
+        <div class="card-back">
+            <h3>Sherlock</h3>
+            <p>Release Date: 2010</p>
+            <p class="description">Sherlock reimagines Arthur Conan Doyle’s legendary detective Sherlock Holmes in modern-day London. Benedict Cumberbatch portrays Holmes as a brilliant but socially awkward detective, while Martin Freeman plays his loyal friend and confidant, Dr. John Watson. Together, they solve complex crimes with the help of cutting-edge technology and keen intellect. The series blends mystery, wit, and intrigue, offering a fresh take on the classic detective stories.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Movie Card 16 -->
+<div class="movie-card" data-genre="comedy" data-type="tv-series">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="https://m.media-amazon.com/images/M/MV5BOTU2YmM5ZjctOGVlMC00YTczLTljM2MtYjhlNGI5YWMyZjFkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Friends">
+        </div>
+        <div class="card-back">
+            <h3>Friends</h3>
+            <p>Release Date: 2010</p>
+            <p class="description">Friends is an iconic sitcom that captures the lives and relationships of six young adults—Rachel, Ross, Monica, Chandler, Joey, and Phoebe—living in New York City. The series follows their personal and professional struggles, romances, and misadventures, all while providing plenty of laughs and heartwarming moments. With its timeless humor and relatable characters, Friends has remained one of the most beloved television shows of all time.</p>
+        </div>
+    </div>
+</div>
+</div>
+    
+<br><br><br><div class="latest-title">
+        <h2 class="titles" id="latest-title">Most recent</h2>
+            </div>
+            <div id="no-recent-message" style="display:none;">No recent movies were found.
+            </div>  
+        
+            <div class="movie-grid" id="most-viewed">
+<!-- Movie Card 1 -->
+<div class="movie-card" data-genre="sci-fi" data-type="movies">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="https://m.media-amazon.com/images/M/MV5BNTc0YmQxMjEtODI5MC00NjFiLTlkMWUtOGQ5NjFmYWUyZGJhXkEyXkFqcGc@._V1_.jpg" alt="Dune: Part Two">
+        </div>
+        <div class="card-back">
+            <h3>Dune: Part Two</h3>
+            <p>Release Date: 2024</p>
+            <p class="description">The highly anticipated sequel to Dune continues Paul Atreides' epic journey as he teams up with Chani and the Fremen to exact revenge and fulfill his destiny as a prophesied leader. With political intrigue, familial betrayal, and vast desert landscapes, the film promises breathtaking cinematography and a riveting conclusion to the saga of power, survival, and the fight for Arrakis.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Movie Card 2 -->
+<div class="movie-card" data-genre="crime" data-type="tv-series">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="https://m.media-amazon.com/images/M/MV5BYzk5MjVjMzEtNzBmZi00NTcyLWE1OWQtZGUxMTJhMTNmZDc4XkEyXkFqcGc@._V1_.jpg" alt="Fool me once">
+        </div>
+        <div class="card-back">
+            <h3>Fool me once</h3>
+            <p>Release Date: 2024</p>
+            <p class="description">Based on Harlan Coben’s novel, Fool Me Once is a thrilling mystery series that follows Maya, a woman who is trying to rebuild her life after the murder of her husband. When she uncovers shocking secrets, including the possibility that her dead husband might still be alive, she is forced to navigate a web of lies, betrayal, and crime. The series combines emotional drama with twists and turns, keeping viewers on edge as the mysteries unfold.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Movie Card 3 -->
+<div class="movie-card" data-genre="comedy" data-type="movies">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="https://m.media-amazon.com/images/M/MV5BOWRkYmNiNDUtYTY0OC00YTZlLTlmMTYtMTJhMTU4OTBkMDY5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Caddo Lake">
+        </div>
+        <div class="card-back">
+            <h3>Lift</h3>
+            <p>Release Date: 2024</p>
+            <p class="description">Lift is an action-packed heist film starring Kevin Hart as Cyrus Whitaker, a skilled thief who leads a crew in a daring mission to steal gold from a high-flying plane. The movie blends action and suspense as the crew faces various challenges, including a conflict with a terrorist mastermind. Directed by F. Gary Gray, it features a strong supporting cast including Gugu Mbatha-Raw and Sam Worthington</p>
+        </div>
+    </div>
+</div>
+
+<!-- Movie Card 4 -->
+<div class="movie-card" data-genre="action" data-type="tv-series">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="https://m.media-amazon.com/images/M/MV5BYzM5ZWMxOGEtZjEyMC00YjQ0LThiYjEtZjVkZGEzN2NlOGEwXkEyXkFqcGc@._V1_.jpg" alt="from">
+        </div>
+        <div class="card-back">
+            <h3>From</h3>
+            <p>Release Date: 2022-2024</p>
+            <p class="description">From is a supernatural horror series that follows the residents of a small town trapped in a nightmarish reality. Those who enter the town find themselves unable to leave, and strange, terrifying creatures emerge at night. As the town’s inhabitants try to survive, they uncover dark secrets about the origins of the town and their own fates. The show blends psychological thriller elements with horror, creating a tense and eerie atmosphere</p>
+        </div>
+    </div>
+</div>
+
+<!-- Movie Card 5 -->
+<div class="movie-card" data-genre="drama" data-type="movies">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="https://www.filmfrance.net/app/uploads/2024/08/Slow-Horses.jpg" alt="Slow Horses: Season 4">
+        </div>
+        <div class="card-back">
+            <h3>Slow Horses: Season 4</h3>
+            <p>Release Date: 2024</p>
+            <p class="description">The latest season of this spy thriller series continues to explore the lives of MI5’s disgraced agents relegated to Slough House. With a mix of humor, danger, and political intrigue, the series showcases high-stakes espionage, unexpected twists, and compelling characters navigating betrayal and redemption.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Movie Card 6 -->
+<div class="movie-card" data-genre="action" data-type="tv-series">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="https://m.media-amazon.com/images/M/MV5BOGFiYzI1ZDctM2U1Zi00ZWI5LWFiMmQtNGU0NTU5MTg3OWM3XkEyXkFqcGc@._V1_.jpg" alt="echo">
+        </div>
+        <div class="card-back">
+            <h3>Echo</h3>
+            <p>Release Date: 2024</p>
+            <p class="description"> Echo is a suspenseful action series that follows a woman, Maya, a former covert operative, who returns to civilian life after a traumatic mission. The series explores her struggles to find peace while being drawn back into a world of danger and intrigue when her past catches up with her. Maya’s journey is filled with intense action and emotional complexity as she deals with betrayal, loyalty, and personal redemption.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Movie Card 7 -->
+<div class="movie-card" data-genre="action" data-type="tv-series">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="https://resizing.flixster.com/mmvBo8CgJiLxvYSimsMguhNEv58=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vYWM4MWJjZjUtN2I0My00NmQwLThmZjEtOTA0NTU4OWNlOWE3LmpwZw==" alt="The Boys: Season 4">
+        </div>
+        <div class="card-back">
+            <h3>The Boys: Season 4</h3>
+            <p>Release Date: 2024</p>
+            <p class="description">Returning with its signature mix of dark humor, violence, and satire, this season of The Boys delves deeper into the fallout of the war between superheroes and vigilantes. With shocking revelations, intense conflicts, and biting social commentary, the show explores power, corruption, and humanity's darker instincts.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Movie Card 8 -->
+<div class="movie-card" data-genre="drama" data-type="movies">
+    <div class="card-inner">
+        <div class="card-front">
+            <img src="https://m.media-amazon.com/images/M/MV5BMzViZjM3ZTUtZDdiZS00MDUzLTgxZjYtYmUwNDNlNWRiYmY4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Masters of the Air">
+        </div>
+        <div class="card-back">
+            <h3>Masters of the Air</h3>
+            <p>Release Date: 2024</p>
+            <p class="description">This WWII drama series follows the 8th Air Force, the “Mighty Eighth,” as they wage a relentless air war over Nazi-occupied Europe. A tale of bravery, camaraderie, and sacrifice, it vividly portrays the struggles of the young men who risked their lives in the skies to fight for freedom.</p>
+        </div>
+    </div>
+</div> 
+        </div>
+       
+        <div class="contact-us">
+            <h3>Contact Us</h3>
+            <p>If you have any questions or feedback, feel free to <a href="https://mail.google.com/mail/?view=cm&fs=1&to=moviesblog@gmail.com" target="_blank">contact us</a>.</p>
+        </div>
+        
+        
+        
